@@ -1,5 +1,5 @@
-import experience from "../data/experience";
-import TimelineItem from "./TimelineItem";
+import experience from "../../data/experience";
+import TimelineItem from "../TimelineItem/TimelineItem";
 import "./Experience.css";
 
 export default function Experience() {

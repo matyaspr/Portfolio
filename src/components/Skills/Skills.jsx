@@ -1,6 +1,6 @@
 import React, { useMemo } from "react";
-import skills from "../data/skills";
-import SkillCard from "./SkillCard";
+import skills from "../../data/skills";
+import SkillCard from "../SkillCard/SkillCard";
 import "./Skills.css";
 
 export default function Skills() {
