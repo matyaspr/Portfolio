@@ -1,7 +1,9 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { useTheme } from "../context/ThemeContext";
+import "./Header.css";
 
 const navLinks = ["Projects", "Skills", "Experience", "Contact"];
+const CV_URL = "https://drive.google.com/uc?export=download&id=TU_FILE_ID_AQUI";
 
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
@@ -17,6 +19,11 @@ export default function Header() {
   const scrollTo = (id) => {
     setActive(id);
     document.getElementById(id.toLowerCase())?.scrollIntoView({ behavior: "smooth" });
+  };
+
+  const handleCVDownload = (e) => {
+    e.preventDefault();
+    window.open(CV_URL, "_blank", "noopener,noreferrer");
   };
 
   return (
@@ -35,6 +42,15 @@ export default function Header() {
               {link}
             </button>
           ))}
+          <a
+            href={CV_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="header__link"
+            onClick={handleCVDownload}
+          >
+            CV
+          </a>
           <button
             className="header__theme-btn"
             onClick={toggleTheme}

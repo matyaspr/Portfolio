@@ -1,6 +1,7 @@
 import React, { useMemo } from "react";
 import skills from "../data/skills";
 import SkillCard from "./SkillCard";
+import "./Skills.css";
 
 export default function Skills() {
   const skillGroups = useMemo(() => skills, []);

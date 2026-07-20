@@ -1,0 +1,25 @@
+.skill-card {
+  padding: 28px;
+}
+
+.skill-card__category {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--accent);
+  margin-bottom: 16px;
+}
+
+.skill-card__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.skill-card__item {
+  padding: 6px 14px;
+  border-radius: 6px;
+  background: var(--card-item-bg);
+  border: 1px solid var(--border);
+  font-size: 0.85rem;
+  font-weight: 500;
+}

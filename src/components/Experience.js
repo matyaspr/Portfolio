@@ -1,6 +1,6 @@
-import React from "react";
 import experience from "../data/experience";
 import TimelineItem from "./TimelineItem";
+import "./Experience.css";
 
 export default function Experience() {
   return (
